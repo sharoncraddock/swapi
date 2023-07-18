@@ -6,7 +6,7 @@ function Starships(){
   return (
     <>
       <section>
-      <h1 className="text-white mt-6 mb-6">You are on the Starships Page</h1>
+      <h1 className="text-gray-300 mt-6 mb-6 text-3xl font-bold text-center font-star-wars">Starships</h1>
       <hr />
        {starships?.isLoading && <p className="text-white text-xl">A moment please...</p>}
        {starships?.error && (
@@ -14,17 +14,19 @@ function Starships(){
             There was an error fetching the data.
           </p>
        )}
-       {starships?.data?.data?.results &&
-         starships?.data?.data?.results?.map(
-          (starship:{[key:string]: string}, index:number) => {
-            return (
-              <ListItem 
-                key={index} 
-                listItemData={starship} 
-              />
-            )
-         })
-       }
+       <ul role="list" class="divide-y divide-gray-100 rounded">
+         {starships?.data?.data?.results &&
+           starships?.data?.data?.results?.map(
+            (starship:{[key:string]: string}, index:number) => {
+              return (
+                <ListItem 
+                  key={index} 
+                  listItemData={starship} 
+                />
+              )
+           })
+         }
+       </ul>
       </section>
     </>
   )

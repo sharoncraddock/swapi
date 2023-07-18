@@ -23,8 +23,6 @@ export default {
     },
     fontFamily: {
       'sans': ['Inter', 'ui-sans-serif', 'system-ui'],
-      'mono': ['Inconsolata', 'SFMono-Regular'],
-      'split-flap': ['Oswald', 'ui-sans-serif'],
     },
   },
   plugins: [],

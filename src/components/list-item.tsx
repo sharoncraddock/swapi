@@ -6,13 +6,28 @@ interface ListItemDataProps {
 
 function ListItem({listItemData}:ListItemDataProps){
   return (
-    <div className="text-white mb-6">
-      <p>Name: { listItemData?.name }</p>
-      <p>Manufacturer: { listItemData?.manufacturer }</p>
-      <p>Max Speed: { listItemData?.max_atmosphering_speed }</p>
-      <p>Number of Crew: { listItemData?.crew }</p>
-      <p>Number of Passengers: { listItemData?.passengers }</p>
-    </div>
+    <li className="py-5 bg-white text-gray-900">
+      <div className="text-center">
+        <p className="text-lg font-bold">{ listItemData?.name }</p>
+        <p className="text-xs">{ listItemData?.manufacturer }</p>
+
+        <div className="mt-5">
+          <p className="text-xs mt-1">
+            <span className="font-bold">Max Speed:{' '}</span>
+              { listItemData?.max_atmosphering_speed }
+            mph
+           </p>
+          <p className="text-xs mt-1 ">
+            <span className="font-bold">Crew Count:{' '}</span>
+            { listItemData?.crew }
+          </p>
+          <p className="text-xs mt-1">
+          <span className="font-bold">Passenger Count:{' '}</span>
+            { listItemData?.passengers }
+          </p>
+        </div>
+      </div>
+    </li>
   )
 }
 
