@@ -8,6 +8,7 @@ import People from './components/people'
 import Starships from './components/starships'
 import Vehicles from './components/vehicles'
 import ItemDetailPage from './components/item-detail-page'
+import Header from './components/header'
 
 
 function App() {
@@ -15,7 +16,7 @@ function App() {
   return (
     <Router>
         <div>
-          <Navbar />
+        <Header />
            <Routes>
             <Route exact path="/" element={<Home />} />
             <Route exact path="/people" element={<People />} />
