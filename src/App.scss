@@ -1,0 +1,21 @@
+@import "tailwindcss/base";
+
+@import "tailwindcss/components";
+
+@import "tailwindcss/utilities";
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+
+#root {
+  max-width: 1280px;
+  width: 86%;
+  margin: 0 auto;
+  padding: 1rem;
+  scroll-behavior: smooth;
+  background-color: #0a192f;
+}
+
+body {
+  background-color: #0a192f;
+}
