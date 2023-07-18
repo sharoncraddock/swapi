@@ -1,7 +1,9 @@
+import PageHeading from './page-heading'
+
 function Vehicles(){
   return (
     <>
-      <h1 className="text-white">You are on the Vehicles Page</h1>
+      <PageHeading text="Vehicles" />
     </>
   )
 }
