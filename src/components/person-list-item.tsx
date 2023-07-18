@@ -13,7 +13,6 @@ function PersonListItem({listItemData}:PersonListItemDataProps){
           <p className="text-xs mt-1">
             <span className="font-bold">Birth Year:{' '}</span>
               { listItemData?.birth_year }
-            mph
            </p>
           <p className="text-xs mt-1 ">
            <span className="font-bold">Gender:{' '}</span>

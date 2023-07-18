@@ -1,6 +1,13 @@
+import Logo from './logo'
+
 function Home() {
   return (
-    <h1 className="text-white">You are on the Home Page</h1>
+    <>
+    <div className="text-center">
+      <Logo color="#FFE81F" />
+    </div>
+    <h1 className="text-white">Welcome to the Star Wars world...</h1>
+    </>
   );
 }
 
