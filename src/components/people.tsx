@@ -15,7 +15,7 @@ function People(){
             There was an error fetching the data.
           </p>
        )}
-       <ul role="list" className="divide-y divide-gray-100 rounded">
+       <ul role="list" className="divide-y divide-gray-200 rounded">
          {people?.data?.data?.results &&
            people?.data?.data?.results?.map(
             (person:{[key:string]: string}, index:number) => {

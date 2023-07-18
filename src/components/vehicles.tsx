@@ -15,7 +15,7 @@ function Vehicles(){
             There was an error fetching the data.
           </p>
        )}
-       <ul role="list" className="divide-y divide-gray-100 rounded">
+       <ul role="list" className="divide-y divide-gray-200 rounded">
          {vehicles?.data?.data?.results &&
            vehicles?.data?.data?.results?.map(
             (vehicle:{[key:string]: string}, index:number) => {

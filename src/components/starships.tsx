@@ -15,7 +15,7 @@ function Starships(){
             There was an error fetching the data.
           </p>
        )}
-       <ul role="list" className="divide-y divide-gray-100 rounded">
+       <ul role="list" className="divide-y divide-gray-200">
          {starships?.data?.data?.results &&
            starships?.data?.data?.results?.map(
             (starship:{[key:string]: string}, index:number) => {
